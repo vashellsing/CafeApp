@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CafeGemas - Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CafeGemas</h1>
+            <p>Distribución Proporcional de Botín</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h3>Resumen del Botín</h3>
+                <div class="input-group">
+                    <label for="gemasAzules">Total Gemas Azules</label>
+                    <input type="number" id="gemasAzules" placeholder="0" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="gemasRojas">Total Gemas Rojas</label>
+                    <input type="number" id="gemasRojas" placeholder="0" min="0">
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>Integrantes del Evento</h3>
+                <div class="input-group">
+                    <label for="numJugadores">Cantidad de Jugadores (1-12)</label>
+                    <input type="number" id="numJugadores" value="1" min="1" max="12">
+                </div>
+                
+                <div id="listaJugadores" class="players-grid">
+                    </div>
+            </section>
+
+            <div class="actions">
+                <button id="btnCalcular" class="btn-primary">Calcular Reparto</button>
+                <button id="btnLimpiar" class="btn-secondary">Limpiar Todo</button>
+            </div>
+
+            <section id="resultados" class="card results-card" style="display: none;">
+                <h3>Resultados del Reparto</h3>
+                <div id="resumenClan" class="clan-reserve">
+                    </div>
+                <hr>
+                <div id="tablaResultados">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
