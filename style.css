@@ -1,10 +1,10 @@
 :root {
     /* Paleta del Cliente */
-    --color-1: #9B2FED; /* Azul-Violeta */
-    --color-2: #DDB9EB; /* Lavanda suave */
-    --color-3: #AD44D4; /* Púrpura intermedio */
-    --color-4: #CFADDB; /* Lila */
-    --color-5: #750CA6; /* Violeta profundo */
+    --color-1: #9B2FED; 
+    --color-2: #DDB9EB; 
+    --color-3: #AD44D4; 
+    --color-4: #CFADDB; 
+    --color-5: #750CA6; 
     
     --bg: #fdfaff; /* Un blanco con un toque lila */
     --text: #1a0624;
